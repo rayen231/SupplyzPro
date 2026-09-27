@@ -17,7 +17,7 @@ GROUND_TRUTH_PATH = ROOT / "evaluation" / "ground_truth.json"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 JUDGE_MODEL = os.getenv("JUDGE_MODEL", "llama-3.3-70b-versatile")
 CHEAP_MODEL = os.getenv("CHEAP_MODEL", "llama-3.1-8b-instant")
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
 
 # USD per 1M tokens (input, output). Groq list prices at time of writing;
 # verify on https://groq.com/pricing before quoting them.

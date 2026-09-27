@@ -6,3 +6,6 @@ data/cache/
 mlruns/
 mlflow.db
 .venv/
+data/*.log
+mlflow.db-journal
+*.db-journal
