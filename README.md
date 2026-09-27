@@ -10,6 +10,21 @@ groups related cases, ranks what developers should fix first, and shows the exac
 
 <sub>Hybrid configuration (rules + GPT-OSS 120B judge on Groq), 87 synthetic sessions, including 15 held-out sessions the rules never saw.</sub>
 
+## 🚀 Live demo
+
+The project is fully deployed on an NVIDIA Brev instance with an L40S GPU. It runs in Docker Compose, and you can check it live here:
+
+| Service | Link | What you will find |
+|---|---|---|
+| **Dashboard** | https://php-looking-python-explore.trycloudflare.com | Ranked issues, issue groups, trace explorer with highlighted evidence, evaluation and cost |
+| **API** | https://palestinian-hints-paul-lawsuit.trycloudflare.com/docs | Interactive FastAPI docs: `GET /issues`, `GET /sessions/{id}`, `POST /analyze` |
+| **MLflow** | https://hugo-electro-consult-confidentiality.trycloudflare.com | Experiment `agent_failure_detection`: one run per configuration, metrics and judge-call traces |
+
+Try the trace explorer on the wrong-customer example:
+https://php-looking-python-explore.trycloudflare.com/?page=2&sid=SES-0009
+
+<sub>The links are public Cloudflare tunnel addresses. They change if the tunnel restarts; this README is updated when they do.</sub>
+
 ![Trace explorer showing a wrong-customer failure with highlighted evidence](docs/images/dash_trace.png)
 
 ---
