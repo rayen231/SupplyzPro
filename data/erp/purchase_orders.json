@@ -1,0 +1,35 @@
+[
+  {
+    "purchase_order_id": "PO-2001",
+    "supplier_id": "SUP001",
+    "status": "created",
+    "lines": [
+      {
+        "product_id": "P001",
+        "quantity": 200
+      }
+    ]
+  },
+  {
+    "purchase_order_id": "PO-2002",
+    "supplier_id": "SUP002",
+    "status": "pending_approval",
+    "lines": [
+      {
+        "product_id": "P005",
+        "quantity": 300
+      }
+    ]
+  },
+  {
+    "purchase_order_id": "PO-2003",
+    "supplier_id": "SUP003",
+    "status": "received",
+    "lines": [
+      {
+        "product_id": "P003",
+        "quantity": 1000
+      }
+    ]
+  }
+]

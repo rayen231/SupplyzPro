@@ -1,0 +1,17 @@
+[
+  {
+    "warehouse_id": "W001",
+    "name": "Tunis Warehouse",
+    "city": "Tunis"
+  },
+  {
+    "warehouse_id": "W002",
+    "name": "Sousse Warehouse",
+    "city": "Sousse"
+  },
+  {
+    "warehouse_id": "W003",
+    "name": "Sfax Warehouse",
+    "city": "Sfax"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "invoice_id": "INV-1001",
+    "customer_id": "C001",
+    "date": "2026-09-02",
+    "amount": 2450.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1002",
+    "customer_id": "C001",
+    "date": "2026-09-18",
+    "amount": 1320.5,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1003",
+    "customer_id": "C002",
+    "date": "2026-09-10",
+    "amount": 980.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1004",
+    "customer_id": "C002",
+    "date": "2026-09-21",
+    "amount": 4100.0,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1005",
+    "customer_id": "C003",
+    "date": "2026-09-05",
+    "amount": 610.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1006",
+    "customer_id": "C004",
+    "date": "2026-09-12",
+    "amount": 275.0,
+    "currency": "TND",
+    "status": "cancelled"
+  },
+  {
+    "invoice_id": "INV-1007",
+    "customer_id": "C004",
+    "date": "2026-09-22",
+    "amount": 1890.0,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1008",
+    "customer_id": "C005",
+    "date": "2026-09-08",
+    "amount": 3300.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1009",
+    "customer_id": "C006",
+    "date": "2026-09-19",
+    "amount": 745.0,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1010",
+    "customer_id": "C007",
+    "date": "2026-09-03",
+    "amount": 5200.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1011",
+    "customer_id": "C008",
+    "date": "2026-09-15",
+    "amount": 430.0,
+    "currency": "TND",
+    "status": "draft"
+  },
+  {
+    "invoice_id": "INV-1012",
+    "customer_id": "C009",
+    "date": "2026-09-11",
+    "amount": 2780.0,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1013",
+    "customer_id": "C010",
+    "date": "2026-09-14",
+    "amount": 1150.0,
+    "currency": "TND",
+    "status": "paid"
+  },
+  {
+    "invoice_id": "INV-1014",
+    "customer_id": "C011",
+    "date": "2026-09-20",
+    "amount": 6400.0,
+    "currency": "TND",
+    "status": "pending"
+  },
+  {
+    "invoice_id": "INV-1015",
+    "customer_id": "C012",
+    "date": "2026-09-09",
+    "amount": 890.0,
+    "currency": "TND",
+    "status": "failed"
+  }
+]

@@ -1,0 +1,1124 @@
+[
+  {
+    "session_id": "SES-0001",
+    "split": "tuned",
+    "family": "wrong_warehouse",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0002",
+    "split": "tuned",
+    "family": "success_pending_reported_honestly",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Write returned pending_approval and the agent says so. Must NOT be flagged."
+  },
+  {
+    "session_id": "SES-0003",
+    "split": "tuned",
+    "family": "recovered_refined_search",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Legitimate retry with a different query."
+  },
+  {
+    "session_id": "SES-0004",
+    "split": "tuned",
+    "family": "wrong_interpretation_invoice_status",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_interpretation",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0005",
+    "split": "tuned",
+    "family": "unsupported_inference_delivery",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_inference",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0006",
+    "split": "tuned",
+    "family": "wrong_interpretation_low_stock",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_interpretation",
+    "key_event_ids": [
+      "E003",
+      "E004"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0007",
+    "split": "tuned",
+    "family": "unsupported_inference_forecast",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_inference",
+    "key_event_ids": [
+      "E003",
+      "E004"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0008",
+    "split": "tuned",
+    "family": "success_disambiguated_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Two customers share the name; agent picks the one matching the company."
+  },
+  {
+    "session_id": "SES-0009",
+    "split": "tuned",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": "User asked for ABC Distribution, agent used XYZ Trading."
+  },
+  {
+    "session_id": "SES-0010",
+    "split": "tuned",
+    "family": "success_disambiguated_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Two customers share the name; agent picks the one matching the company."
+  },
+  {
+    "session_id": "SES-0011",
+    "split": "tuned",
+    "family": "unsupported_success_invoice_failed",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0012",
+    "split": "tuned",
+    "family": "incomplete_po_missing_line",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E006",
+      "E008"
+    ],
+    "language": "en",
+    "description": "Fanta Orange 1L line missing."
+  },
+  {
+    "session_id": "SES-0013",
+    "split": "tuned",
+    "family": "success_stock_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0014",
+    "split": "tuned",
+    "family": "incomplete_second_customer_missing",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0015",
+    "split": "tuned",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": "User asked for Nour Supermarket, agent used Sahel Retail."
+  },
+  {
+    "session_id": "SES-0016",
+    "split": "tuned",
+    "family": "repeated_question_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0017",
+    "split": "tuned",
+    "family": "success_po_created",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0018",
+    "split": "tuned",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0019",
+    "split": "tuned",
+    "family": "success_po_created",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0020",
+    "split": "tuned",
+    "family": "no_progress_loop_ambiguous",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0021",
+    "split": "tuned",
+    "family": "repeated_question_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0022",
+    "split": "tuned",
+    "family": "incomplete_email_not_sent",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0023",
+    "split": "tuned",
+    "family": "unsupported_inference_payment",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_inference",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0024",
+    "split": "tuned",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0025",
+    "split": "tuned",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Legitimate clarification: the request is genuinely ambiguous."
+  },
+  {
+    "session_id": "SES-0026",
+    "split": "tuned",
+    "family": "repeated_question_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0027",
+    "split": "tuned",
+    "family": "unsupported_inference_ranking",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_inference",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0028",
+    "split": "heldout",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "fr",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0029",
+    "split": "tuned",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Legitimate clarification: the request is genuinely ambiguous."
+  },
+  {
+    "session_id": "SES-0030",
+    "split": "tuned",
+    "family": "success_stock_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0031",
+    "split": "tuned",
+    "family": "recovered_refined_search",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0032",
+    "split": "tuned",
+    "family": "success_po_created",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0033",
+    "split": "tuned",
+    "family": "recovered_transient_failure",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Identical retry after a technical failure is legitimate."
+  },
+  {
+    "session_id": "SES-0034",
+    "split": "tuned",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": "User asked for Sahel Retail, agent used Nour Supermarket."
+  },
+  {
+    "session_id": "SES-0035",
+    "split": "heldout",
+    "family": "success_stock_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "fr",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0036",
+    "split": "tuned",
+    "family": "wrong_product",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E005",
+      "E006",
+      "E008"
+    ],
+    "language": "en",
+    "description": "User asked for Coca-Cola 1L, agent used Coca-Cola Zero 1L."
+  },
+  {
+    "session_id": "SES-0037",
+    "split": "tuned",
+    "family": "unsupported_success_send_failed",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0038",
+    "split": "tuned",
+    "family": "recovered_self_correction",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0039",
+    "split": "tuned",
+    "family": "wrong_warehouse",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0040",
+    "split": "heldout",
+    "family": "wrong_warehouse",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0041",
+    "split": "heldout",
+    "family": "repeated_question_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0042",
+    "split": "tuned",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0043",
+    "split": "heldout",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0044",
+    "split": "heldout",
+    "family": "unsupported_inference_payment",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_inference",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "fr",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0045",
+    "split": "tuned",
+    "family": "recovered_self_correction",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0046",
+    "split": "heldout",
+    "family": "wrong_interpretation_stock",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_interpretation",
+    "key_event_ids": [
+      "E003",
+      "E004"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0047",
+    "split": "tuned",
+    "family": "incomplete_email_not_sent",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0048",
+    "split": "tuned",
+    "family": "repeated_question_product",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0049",
+    "split": "tuned",
+    "family": "wrong_product",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E005",
+      "E006",
+      "E008"
+    ],
+    "language": "en",
+    "description": "User asked for Delice Milk 1L, agent used Delice Milk Lactose-Free 1L."
+  },
+  {
+    "session_id": "SES-0050",
+    "split": "tuned",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": "User asked for XYZ Trading, agent used ABC Distribution."
+  },
+  {
+    "session_id": "SES-0051",
+    "split": "tuned",
+    "family": "recovered_transient_failure",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Identical retry after a technical failure is legitimate."
+  },
+  {
+    "session_id": "SES-0052",
+    "split": "tuned",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0053",
+    "split": "tuned",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": "User asked for Atlas Pharma, agent used Bizerte Bakery."
+  },
+  {
+    "session_id": "SES-0054",
+    "split": "tuned",
+    "family": "wrong_product",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E005",
+      "E006",
+      "E008"
+    ],
+    "language": "en",
+    "description": "User asked for Safia Water 1.5L, agent used Safia Water 0.5L."
+  },
+  {
+    "session_id": "SES-0055",
+    "split": "tuned",
+    "family": "success_stock_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0056",
+    "split": "tuned",
+    "family": "legit_reask_after_unhelpful_answer",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Second question is legitimate: the first answer did not identify the customer."
+  },
+  {
+    "session_id": "SES-0057",
+    "split": "tuned",
+    "family": "wrong_interpretation_stock",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_interpretation",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0058",
+    "split": "tuned",
+    "family": "unsupported_success_send_failed",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0059",
+    "split": "tuned",
+    "family": "unsupported_success_no_write",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E001",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0060",
+    "split": "heldout",
+    "family": "incomplete_po_missing_line",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0061",
+    "split": "heldout",
+    "family": "recovered_self_correction",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0062",
+    "split": "heldout",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0063",
+    "split": "tuned",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0064",
+    "split": "tuned",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Legitimate clarification: the request is genuinely ambiguous."
+  },
+  {
+    "session_id": "SES-0065",
+    "split": "heldout",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "fr",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0066",
+    "split": "tuned",
+    "family": "wrong_interpretation_balance",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_interpretation",
+    "key_event_ids": [
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0067",
+    "split": "tuned",
+    "family": "unsupported_success_no_write",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E001",
+      "E002"
+    ],
+    "language": "en",
+    "description": "Claims a write that was never executed."
+  },
+  {
+    "session_id": "SES-0068",
+    "split": "tuned",
+    "family": "success_pending_reported_honestly",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Write returned pending_approval and the agent says so. Must NOT be flagged."
+  },
+  {
+    "session_id": "SES-0069",
+    "split": "tuned",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0070",
+    "split": "tuned",
+    "family": "clarification_ambiguous_name",
+    "expected_outcome": "clarification_needed",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Legitimate clarification: the request is genuinely ambiguous."
+  },
+  {
+    "session_id": "SES-0071",
+    "split": "tuned",
+    "family": "success_disambiguated_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Two customers share the name; agent picks the one matching the company."
+  },
+  {
+    "session_id": "SES-0072",
+    "split": "tuned",
+    "family": "legit_reask_after_unhelpful_answer",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Second question is legitimate: the first answer did not identify the customer."
+  },
+  {
+    "session_id": "SES-0073",
+    "split": "heldout",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0074",
+    "split": "tuned",
+    "family": "incomplete_second_customer_missing",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E004",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0075",
+    "split": "heldout",
+    "family": "wrong_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "wrong_entity",
+    "key_event_ids": [
+      "E001",
+      "E003",
+      "E004",
+      "E006"
+    ],
+    "language": "fr",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0076",
+    "split": "tuned",
+    "family": "incomplete_po_missing_line",
+    "expected_outcome": "failure",
+    "expected_failure_type": "incomplete_request",
+    "key_event_ids": [
+      "E001",
+      "E006",
+      "E008"
+    ],
+    "language": "en",
+    "description": "Vitalait Yogurt 125g line missing."
+  },
+  {
+    "session_id": "SES-0077",
+    "split": "tuned",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007",
+      "E008",
+      "E009"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0078",
+    "split": "tuned",
+    "family": "unsupported_success_invoice_failed",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0079",
+    "split": "tuned",
+    "family": "recovered_after_pushback",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0080",
+    "split": "tuned",
+    "family": "unsupported_success_po_pending",
+    "expected_outcome": "failure",
+    "expected_failure_type": "unsupported_success_claim",
+    "key_event_ids": [
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0081",
+    "split": "tuned",
+    "family": "repeated_question_customer",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E004",
+      "E005",
+      "E006"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0082",
+    "split": "tuned",
+    "family": "recovered_after_pushback",
+    "expected_outcome": "recovered",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0083",
+    "split": "tuned",
+    "family": "success_disambiguated_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": "Two customers share the name; agent picks the one matching the company."
+  },
+  {
+    "session_id": "SES-0084",
+    "split": "tuned",
+    "family": "repeated_question_already_in_request",
+    "expected_outcome": "failure",
+    "expected_failure_type": "repeated_question",
+    "key_event_ids": [
+      "E001",
+      "E002"
+    ],
+    "language": "en",
+    "description": "Agent asks for information the first message already contained."
+  },
+  {
+    "session_id": "SES-0085",
+    "split": "tuned",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007",
+      "E008",
+      "E009"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0086",
+    "split": "heldout",
+    "family": "no_progress_loop_empty",
+    "expected_outcome": "failure",
+    "expected_failure_type": "no_progress_loop",
+    "key_event_ids": [
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007"
+    ],
+    "language": "en",
+    "description": ""
+  },
+  {
+    "session_id": "SES-0087",
+    "split": "heldout",
+    "family": "success_disambiguated_lookup",
+    "expected_outcome": "success",
+    "expected_failure_type": null,
+    "key_event_ids": [],
+    "language": "en",
+    "description": ""
+  }
+]

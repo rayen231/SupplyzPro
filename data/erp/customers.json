@@ -1,0 +1,98 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Ahmed Ben Ali",
+    "company": "ABC Distribution",
+    "city": "Tunis",
+    "phone": "+21622111111",
+    "email": "ahmed@abc.tn"
+  },
+  {
+    "customer_id": "C002",
+    "name": "Ahmed Ben Ali",
+    "company": "XYZ Trading",
+    "city": "Sfax",
+    "phone": "+21655222222",
+    "email": "ahmed@xyz.tn"
+  },
+  {
+    "customer_id": "C003",
+    "name": "John Smith",
+    "company": "Carthage Foods",
+    "city": "Tunis",
+    "phone": "+21620333333",
+    "email": "john@carthagefoods.tn"
+  },
+  {
+    "customer_id": "C004",
+    "name": "John Doe",
+    "company": "Medina Market",
+    "city": "Sousse",
+    "phone": "+21621444444",
+    "email": "john@medinamarket.tn"
+  },
+  {
+    "customer_id": "C005",
+    "name": "Sami Trabelsi",
+    "company": "Sahel Retail",
+    "city": "Sousse",
+    "phone": "+21698555555",
+    "email": "sami@sahelretail.tn"
+  },
+  {
+    "customer_id": "C006",
+    "name": "Sami Trabelsi",
+    "company": "Nour Supermarket",
+    "city": "Tunis",
+    "phone": "+21697666666",
+    "email": "sami@nour.tn"
+  },
+  {
+    "customer_id": "C007",
+    "name": "Leila Haddad",
+    "company": "Atlas Pharma",
+    "city": "Tunis",
+    "phone": "+21623777777",
+    "email": "leila@atlaspharma.tn"
+  },
+  {
+    "customer_id": "C008",
+    "name": "Leila Haddad",
+    "company": "Bizerte Bakery",
+    "city": "Bizerte",
+    "phone": "+21624888888",
+    "email": "leila@bizertebakery.tn"
+  },
+  {
+    "customer_id": "C009",
+    "name": "Mehdi Jaziri",
+    "company": "Jasmine Hotels",
+    "city": "Hammamet",
+    "phone": "+21625999999",
+    "email": "mehdi@jasmine.tn"
+  },
+  {
+    "customer_id": "C010",
+    "name": "Ines Gharbi",
+    "company": "Cap Bon Catering",
+    "city": "Nabeul",
+    "phone": "+21626101010",
+    "email": "ines@capbon.tn"
+  },
+  {
+    "customer_id": "C011",
+    "name": "Karim Mansour",
+    "company": "Djerba Resorts",
+    "city": "Djerba",
+    "phone": "+21627121212",
+    "email": "karim@djerbaresorts.tn"
+  },
+  {
+    "customer_id": "C012",
+    "name": "Salma Ayari",
+    "company": "Green Grocers",
+    "city": "Sfax",
+    "phone": "+21628131313",
+    "email": "salma@greengrocers.tn"
+  }
+]

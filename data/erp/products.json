@@ -1,0 +1,62 @@
+[
+  {
+    "product_id": "P001",
+    "name": "Coca-Cola 1L",
+    "sku": "CC1L",
+    "category": "Beverages"
+  },
+  {
+    "product_id": "P002",
+    "name": "Coca-Cola Zero 1L",
+    "sku": "CCZ1L",
+    "category": "Beverages"
+  },
+  {
+    "product_id": "P003",
+    "name": "Safia Water 1.5L",
+    "sku": "SAF15",
+    "category": "Water"
+  },
+  {
+    "product_id": "P004",
+    "name": "Safia Water 0.5L",
+    "sku": "SAF05",
+    "category": "Water"
+  },
+  {
+    "product_id": "P005",
+    "name": "Delice Milk 1L",
+    "sku": "DLM1L",
+    "category": "Dairy"
+  },
+  {
+    "product_id": "P006",
+    "name": "Delice Milk Lactose-Free 1L",
+    "sku": "DLMLF1L",
+    "category": "Dairy"
+  },
+  {
+    "product_id": "P007",
+    "name": "Fanta Orange 1L",
+    "sku": "FO1L",
+    "category": "Beverages"
+  },
+  {
+    "product_id": "P008",
+    "name": "Sprite 1L",
+    "sku": "SP1L",
+    "category": "Beverages"
+  },
+  {
+    "product_id": "P009",
+    "name": "Vitalait Yogurt 125g",
+    "sku": "VY125",
+    "category": "Dairy"
+  },
+  {
+    "product_id": "P010",
+    "name": "Saida Wafers 45g",
+    "sku": "SW45",
+    "category": "Snacks"
+  }
+]

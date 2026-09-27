@@ -1,0 +1,22 @@
+[
+  {
+    "supplier_id": "SUP001",
+    "name": "Carthage Beverages",
+    "city": "Tunis"
+  },
+  {
+    "supplier_id": "SUP002",
+    "name": "Sahel Dairy",
+    "city": "Sousse"
+  },
+  {
+    "supplier_id": "SUP003",
+    "name": "Atlas Water Supply",
+    "city": "Zaghouan"
+  },
+  {
+    "supplier_id": "SUP004",
+    "name": "Medina Snacks",
+    "city": "Sfax"
+  }
+]
