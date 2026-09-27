@@ -45,9 +45,16 @@ if not configs:
 keys = [c["config"] for c in configs]
 default = next((k for k in (f"hybrid:{config.JUDGE_MODEL}", "rules") if k in keys), keys[0])
 
+PAGES = ["Overview & ranked issues", "Issue detail", "Trace explorer", "Evaluation, uncertainty & cost"]
+_qp = st.query_params  # deep links: ?page=2&sid=SES-0009
+if "page" not in st.session_state and _qp.get("page", "").isdigit() and int(_qp["page"]) < len(PAGES):
+    st.session_state["page"] = PAGES[int(_qp["page"])]
+if "trace_sid" not in st.session_state and _qp.get("sid"):
+    st.session_state["trace_sid"] = _qp["sid"]
+
 st.sidebar.title("Agent Failure Intelligence")
 st.sidebar.caption("Semantic failure detection for SupplyzPro-style ERP agents")
-page = st.sidebar.radio("Page", ["Overview & ranked issues", "Issue detail", "Trace explorer", "Evaluation, uncertainty & cost"],
+page = st.sidebar.radio("Page", PAGES,
                         key="page")
 cfg = st.sidebar.selectbox("Analyzer configuration", keys, index=keys.index(default),
                            help="rules = deterministic only; llm = LLM judge on every session; hybrid = rules + LLM on triaged sessions")
