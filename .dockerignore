@@ -1,0 +1,8 @@
+.env
+.git
+__pycache__
+data/cache
+data/results.db
+mlruns
+mlflow.db
+*.db-journal
