@@ -131,7 +131,11 @@ def merge(s: Session, mode: str, hits: list[RuleHit], recovery: list[str], verdi
                 a.outcome, a.findings = "failure", [_finalize(s, f)]
         elif j:
             a.outcome = j.outcome
-            if base != j.outcome and base != "success" and mode != "llm":
+            # Deterministic recovery evidence (empty search refined, failed write retried) beats an LLM "success":
+            # this only changes the success/recovered label, never a failure decision.
+            if j.outcome == "success" and base == "recovered" and mode != "llm":
+                a.outcome = "recovered"
+            elif base != j.outcome and base != "success" and mode != "llm":
                 a.uncertain_notes.append(f"Rules suggested '{base}', LLM judged '{j.outcome}'.")
         else:
             a.outcome = base

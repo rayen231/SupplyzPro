@@ -67,7 +67,38 @@ one gold key event.
 
 ## Results
 
-RESULTS_PLACEHOLDER
+Measured on the 87 sessions, with Groq-hosted models: `openai/gpt-oss-120b` as the judge and `openai/gpt-oss-20b` as the cheap comparison. Prompt version v2.
+
+| Configuration | Precision | Recall | F1 | False positive rate | Type macro-F1 | Held-out F1 | Cost / 1k sessions |
+|---|---|---|---|---|---|---|---|
+| Rules only | 1.00 | 0.64 | 0.78 | 0.00 | 0.55 | 0.67 | $0 |
+| LLM only, 20B | 1.00 | 0.71 | 0.83 | 0.00 | 0.64 | 0.75 | $0.19 |
+| Hybrid, 20B | 1.00 | 0.73 | 0.85 | 0.00 | 0.65 | 0.75 | $0.19 |
+| LLM only, 120B | 1.00 | 0.91 | 0.95 | 0.00 | 0.90 | 0.95 | $0.40 |
+| **Hybrid, 120B** | **1.00** | **0.93** | **0.96** | **0.00** | **0.90** | **0.95** | **$0.39** |
+
+- **No legitimate session was flagged** in any configuration: refined searches, timeout retries, honest pending reports, clarifications and legitimate re-asks were all left alone.
+- **Evidence grounding is 100%.** Every true-failure finding cites at least one gold key event.
+- **Recovery recall** is 1.00 for the hybrid versus 0.78 for the LLM alone. The deterministic recovery signal fixes the cases where the LLM calls a refined search plain success.
+- **Rules alone miss the semantic types by design.** They catch no incomplete requests, wrong interpretations or unsupported inferences, and no French or paraphrased success claims. The LLM adds that recall.
+- **The small model is not enough on its own.** It excuses speculative statements and paraphrased success claims. Rules lift it slightly, but the 120B judge is the better choice at about $0.40 per thousand sessions.
+
+**Runtime and cost per session**, for the hybrid with the 120B judge:
+
+| Step | Value |
+|---|---|
+| Deterministic rules | about 0.1 ms |
+| LLM judge latency | about 1.2 s per call |
+| Tokens per LLM call | about 1,240 in and 350 out |
+| LLM calls per session | at most 1 |
+| Grouping and ranking | about 2 s for the whole batch, mostly library import, offline |
+
+**What still fails** with the hybrid 120B configuration:
+- **Loops ending in "not found":** the loop rule fires on 3 sessions, but the judge calls them success because the agent honestly reported "not found". Soft rules are overridable by design, so these appear in the dashboard's override list rather than as failures. Making the loop rule non-overridable would recover all three with no false positives on this data.
+- **Wrong interpretation typed as a success claim:** 2 cases are labelled unsupported success instead of wrong interpretation. They are still counted as failures.
+- **Request already contained the answer:** 1 repeated question where the answer was already in the first message. Neither layer catches it.
+
+**Triage filters almost nothing on this dataset.** It sends 99% of sessions to the LLM, because nearly every synthetic session contains a write, an ambiguous search or a non-final status. On real traffic, with many plain lookups, the skip rate should be higher. We have not measured it.
 
 ## Run it
 
